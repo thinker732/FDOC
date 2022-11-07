@@ -1,0 +1,54 @@
+<br><br><br>
+<div class="container text-center mt-5 mb-5">
+
+<h1 class="page-header mt-5" >Register Form</h1>
+
+<!-- Registration Form -->
+<form [formGroup]="form" (submit)="onRegisterSubmit()" class="mt-5">
+
+    <!-- Username Input -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <div >
+        <input type="text" name="username" class="form-control" autocomplete="off" placeholder="*Username" formControlName="username"  />
+        
+      </div>
+    </div>
+    <!-- Email Input -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <div>
+        <input type="text" name="email" class="form-control" autocomplete="off" placeholder="*Email" formControlName="email"  />
+        
+      </div>
+    </div>
+
+    
+  
+    <!-- Password Input -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div>
+        <input type="password" name="password" class="form-control" autocomplete="off" placeholder="*Password" formControlName="password" />
+      </div>
+    </div>
+  
+    <!-- Confirm Password Input -->
+    <div class="form-group">
+      <label for="confirm">Confirm Password</label>
+      <div>
+        <input type="password" name="confirm" class="form-control" autocomplete="off" placeholder="*Confirm Password" formControlName="confirm" />
+       
+      </div>
+    </div>
+  
+    <!-- Submit Input -->
+    <input type="submit" class="btn btn-primary" value="Submit" />
+    <br>
+  
+    
+  </form>
+
+
+
+</div>
