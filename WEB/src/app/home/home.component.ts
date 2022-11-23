@@ -10,7 +10,7 @@ import { Component, OnInit,Input} from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  research=true
+  research=false
   doctors2=[
     {
       "_id": "60b64cc45ec5f18bf5ae97b3",
@@ -80,7 +80,6 @@ export class HomeComponent implements OnInit {
 
 speciality:string=" ";
 
-
 /*
   getfromserver(){
     this.httpClient
@@ -95,12 +94,13 @@ speciality:string=" ";
      );
  }
 */
+
   onSearch() {
-      this.research=false
+    this.research=false
     let locality="logbessou"
 
       
-     this.doctors2=this.doctors.filter(doc=>doc.specialite===this.speciality.toLocaleLowerCase())
+     this.doctors2=this.doctors.filter(doc=>doc.specialite===this.speciality.toLocaleLowerCase().trim())
      
      console.log(this.speciality)
       console.log(this.doctors2)
