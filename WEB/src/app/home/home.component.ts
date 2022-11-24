@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
 
 speciality:string=" ";
 
-/*
+
   getfromserver(){
     this.httpClient
       .get<any[]>('http://localhost:3000/doctors')
@@ -93,7 +93,7 @@ speciality:string=" ";
        }
      );
  }
-*/
+
 
   onSearch() {
     this.research=false
